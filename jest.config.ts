@@ -16,7 +16,8 @@ const config: Config = {
     '!src/app/**', // should be tested in e2e
     '!src/lib/registry.tsx',
     '!src/types/**',
-    '!src/styles/**'
+    '!src/styles/**',
+    '!src/**/stories.tsx',
   ],
   preset: 'ts-jest',
   transform: {
