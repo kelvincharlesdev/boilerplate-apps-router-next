@@ -6,8 +6,14 @@ describe('jxdbcj', () => {
   it('cjj', () => {
     render(<Main />)
 
-    const teste = screen.getByText('teste')
+    const teste = screen.getByText('React Avançado')
 
     expect(teste).toBeInTheDocument()
+  })
+
+  it('Shoud render the colors correctly', () => {
+    const { container } = render(<Main />)
+
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
   })
 })
